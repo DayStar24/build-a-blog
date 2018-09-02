@@ -61,7 +61,6 @@ def new_post():
             db.session.commit()
             template = render_template('post.html', h1_text=blog.title, p_text=blog.body)
     else:
-        #blogs = Blog.query.all()
         template = render_template('new_post.html')
 
     return template
