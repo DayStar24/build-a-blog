@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Build a Blog</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/blogs.css') }}">
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <td><h4><a href='/blog'>Main Blog Page</a>&nbsp;</h4></td>&nbsp;
+                <td><h4>&nbsp;<a href='/newpost'>Add a Blog Entry</a></h4></td>
+            </tr>
+        </table>
+
+        <h1 align='center'>{{h1_text}}</h1>
+
+{% block content %}
+{% endblock %}
+
+    </body>
+</html>
